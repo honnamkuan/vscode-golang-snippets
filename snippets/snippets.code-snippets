@@ -43,7 +43,7 @@
 
   "append": {
     "prefix": "ap",
-    "body": ["$1 = append(${1:slice}, ${0:element})"]
+    "body": ["${1:slice} = append(${1:slice}, ${0:element})"]
   },
 
   "log.Printf": {
@@ -68,12 +68,12 @@
 
   "errors.Is()": {
     "prefix": "is",
-    "body": ["if errors.Is(err, ${1:io.ErrUnexpectedEOF}) {", "  $0", "}"]
+    "body": ["if errors.Is(err, ${1:exec.ErrNotFound}) {", "  $0", "}"]
   },
 
   "errors.As()": {
     "prefix": "as",
-    "body": ["var e ${1:*os.PathError}", "if errors.As(err, &e) {", "  $0", "}"]
+    "body": ["var e ${1:*exec.Error}", "if errors.As(err, &e) {", "  $0", "}"]
   },
 
   "Error with Stack": {
@@ -118,7 +118,7 @@
 
   "Struct Tag": {
     "prefix": "stt",
-    "body": ["`${1:json}:\"${2:jsonField}\"`"]
+    "body": ["`${1:json}:\"${2:jsonFieldName}\"`"]
   },
 
   "Interface": {
@@ -126,9 +126,9 @@
     "body": ["type ${1:interfaceName} interface {", "  $0", "}"]
   },
 
-  "Lock & Unlock": {
+  "sync.Mutex Lock and defer Unlock": {
     "prefix": "lock",
-    "body": ["$1.Lock()", "defer $1.Unlock()"]
+    "body": ["${1:mu}.Lock()", "defer ${1:mu}.Unlock()"]
   },
 
   "New Constructor Method": {
@@ -145,12 +145,12 @@
 
   "For Range": {
     "prefix": "fr",
-    "body": ["for _, ${1:v} := range ${2:value} {", "  $0", "}"]
+    "body": ["for _, ${1:v} := range ${2:values} {", "  $0", "}"]
   },
 
   "For Range Chan": {
     "prefix": "frr",
-    "body": ["for ${1:v} := range ${2:value} {", "  $0", "}"]
+    "body": ["for ${1:v} := range ${2:channel} {", "  $0", "}"]
   },
 
   "Non-blocking Channel Send": {

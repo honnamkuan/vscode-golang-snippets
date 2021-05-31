@@ -2,11 +2,17 @@
   "name": "go-snippets",
   "displayName": "Go Snippets",
   "description": "Golang snippets for VSCode",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "honnamkuan",
+  "icon": "images/icon.png",
   "author": {
     "name": "Hon Nam Kuan",
     "email": "honnamkuan@gmail.com",
     "url": "https://github.com/honnamkuan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/honnamkuan/vscode-go-snippets"
   },
   "license": "MIT",
   "engines": {
