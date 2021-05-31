@@ -21,6 +21,21 @@
   "categories": [
     "Snippets"
   ],
+  "keywords": [
+    "go",
+    "golang",
+    "go snippet",
+    "go snippets",
+    "golang snippet",
+    "golang snippets",
+    "go-snippet",
+    "go-snippets",
+    "golang-snippet",
+    "golang-snippets",
+    "snippet",
+    "snippets",
+    "autocomplete"
+  ],
   "contributes": {
     "snippets": [
       {
