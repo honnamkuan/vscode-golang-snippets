@@ -2,7 +2,7 @@
   "name": "go-snippets",
   "displayName": "Go Snippets",
   "description": "Golang snippets for VSCode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "honnamkuan",
   "icon": "images/icon.png",
   "author": {
