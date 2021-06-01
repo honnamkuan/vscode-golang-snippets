@@ -1,7 +1,7 @@
 # VS Code Go Snippets
 -------------------
 
-This extension contains code snippets for Go syntax for [Vs Code][code] editor.
+This extension contains code snippets for Go syntax for [VS Code][code] editor.
 
 
 ## Installation
@@ -32,11 +32,11 @@ Below is a list of all available snippets and the triggers of each one.
 ### Types
 | Trigger  | Content |
 | -------: | ------- |
-| `st`   | struct type <pre>type structName struct {<br/><br/>}</pre>|
+| `st`   | struct type <pre>type structName struct {<br/>}</pre>|
 | `sf`   | struct field `fieldName string`|
 | `stt`   | struct tag `` `json:"jsonFieldName"` ``|
-| `ne`   | struct constructor method <pre>func NewFoo() *Foo {<br/><br/>  return &Foo{<br/><br/>  }<br/>}</pre>|
-| `inte`   | Interface type <pre>type interfaceName interface {<br/><br/>}|
+| `ne`   | struct constructor method <pre>func NewFoo() *Foo{<br/>  return &Foo {<br/>  }<br/>}</pre>|
+| `inte`   | Interface type <pre>type interfaceName interface {<br/>}|
 
 
 ### Collection manipulation
