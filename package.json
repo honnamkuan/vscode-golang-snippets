@@ -1,7 +1,7 @@
 {
   "name": "golang-snippets",
   "displayName": "Golang Snippets",
-  "description": "Golang snippets for VS Code",
+  "description": "Go snippets for VS Code",
   "version": "1.0.2",
   "publisher": "honnamkuan",
   "icon": "images/icon.png",

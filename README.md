@@ -1,13 +1,13 @@
 # VS Code Go Snippets
 -------------------
 
-This extension contains code snippets for Go syntax for [VS Code][code] editor.
+This extension contains code snippets for Go language in [VS Code][code].
 
 
 ## Installation
 
-In order to install an extension you need to launch the Command Palette (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
-There you have either the option to show the already installed snippets or install new ones. Search for *honnamkuan.go-snippets* and install it.
+In order to install an extension you need to launch the Command Palette (`Ctrl + Shift + P` or `Cmd + Shift + P`) and type Extensions.
+There you have either the option to show the already installed snippets or install new ones. Search for `honnamkuan.golang-snippets` and install it.
 
 ## Supported languages (file extensions)
 * Go (.go)
@@ -17,8 +17,8 @@ There you have either the option to show the already installed snippets or insta
 Below is a list of all available snippets and the triggers of each one.
 
 ### General
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `vv`   | initialize variable `varName := value`|
 | `ier`   | if error `if err != nil { myStatements }` |
 | `ifok`   | if ok `if value,ok := myFunc; ok { myStatements } `|
@@ -30,8 +30,8 @@ Below is a list of all available snippets and the triggers of each one.
 
 
 ### Types
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `st`   | struct type <pre>type structName struct {<br/>}</pre>|
 | `sf`   | struct field `fieldName string`|
 | `stt`   | struct tag `` `json:"jsonFieldName"` ``|
@@ -40,8 +40,8 @@ Below is a list of all available snippets and the triggers of each one.
 
 
 ### Collection manipulation
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `sr`   | remove one element from slice `slice = append(slice[:index], slice[index+1:]...)` |
 | `ap`   | append element to slice `slice = append(slice, element)` |
 | `del`   | delete map element by key `delete(map, key)`|
@@ -50,23 +50,23 @@ Below is a list of all available snippets and the triggers of each one.
 
 
 ### Return values
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `rn`   | Return Nil `return nil`|
 | `rne`   | Return Nil and err `return nil, err`|
 | `re`   | Return err `return err`|
 
 
 ### Logging
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `lo`   | log variable `log.Printf("%+v\n", varName)` |
 | `le`   | log error `log.Printf("%+v\n", err)` |
 
 
 ### Error Handling
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `es`   | errors with stack `errors.WithStack(err)`|
 | `em`   | error with message `errors.WithMessage(err, message)`|
 | `emf`   | error with messagef `errors.WithMessagef(err, format, args)`|
@@ -75,8 +75,8 @@ Below is a list of all available snippets and the triggers of each one.
 
 
 ### Concurrency
-| Trigger  | Content |
-| -------: | ------- |
+| Prefix  | Content |
+| :------- | ------- |
 | `gofunc`   | anonymous go function `go func() { myStatements }` |
 | `defunc`   | anonymous defer function `defer func { myStatements }`|
 | `lock`   | sync.Mutex Lock and defer Unlock <pre>mu.Lock()<br/>defer mu.Unlock()</pre>|
