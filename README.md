@@ -1,6 +1,8 @@
 # VS Code Go Snippets
 -------------------
 
+If you find this extension useful, please consider to [buy me a coffee][coffee] ☕ 😉
+
 This extension contains code snippets for Go language in [VS Code][code].
 
 
@@ -84,3 +86,6 @@ Below is a list of all available snippets and the triggers of each one.
 
 
 [code]: https://code.visualstudio.com/
+[coffee]: https://buy.stripe.com/9AQ9DA6qq3Afbrq7ss
+
+
