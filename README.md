@@ -82,7 +82,7 @@ Below is a list of all available snippets and the triggers of each one.
 | `gofunc`   | anonymous go function `go func() { myStatements }` |
 | `defunc`   | anonymous defer function `defer func { myStatements }`|
 | `lock`   | sync.Mutex Lock and defer Unlock <pre>mu.Lock()<br/>defer mu.Unlock()</pre>|
-| `nb` | non-blocking channel send <pre>select {<br/>case msg <- msgChan:<br/>default:<br/>}</pre>|
+| `nb` | non-blocking channel send <pre>select {<br/>case msg &lt;- msgChan:<br/>default:<br/>}</pre>|
 
 
 [code]: https://code.visualstudio.com/
