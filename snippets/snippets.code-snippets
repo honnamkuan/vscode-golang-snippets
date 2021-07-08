@@ -60,12 +60,18 @@
     "prefix": "fms",
     "body": ["fmt.Sprintf(\"${1:%+v}\", $0)"]
   },
-
   "if error": {
     "prefix": "ier",
     "body": ["if err != nil {", "  $0", "}"]
   },
-
+  "if error return error": {
+    "prefix": "ierr",
+    "body": ["if err != nil {", "return err", "}"]
+  },
+  "if error return nil, error": {
+    "prefix": "ierrn",
+    "body": ["if err != nil {", "return nil, err", "}"]
+  },
   "errors.Is()": {
     "prefix": "is",
     "body": ["if errors.Is(err, ${1:exec.ErrNotFound}) {", "  $0", "}"]
