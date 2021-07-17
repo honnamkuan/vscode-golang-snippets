@@ -1,3 +1,9 @@
+[![Version](https://vsmarketplacebadge.apphb.com/version/honnamkuan.golang-snippets.svg
+)](https://marketplace.visualstudio.com/items?itemName=honnamkuan.golang-snippets)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/honnamkuan.golang-snippets.svg
+)](https://marketplace.visualstudio.com/items?itemName=honnamkuan.golang-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/honnamkuan.golang-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=honnamkuan.golang-snippets)
+
 # VS Code Go Snippets
 -------------------
 
