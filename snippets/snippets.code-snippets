@@ -50,15 +50,35 @@
     "prefix": "lo",
     "body": ["log.Printf(\"${1:%+v}\\n\", $0)"]
   },
-
+   
   "log.Printf err": {
     "prefix": "le",
     "body": ["log.Printf(\"${1:%+v}\\n\", err)"]
   },
+          
+  "log.Fatal": {
+      "prefix": "lf",
+      "body": ["log.Fatal(${0:err})"]
+  },
 
-  "fmt Sprintf": {
+  "log.Fatalf": {
+      "prefix": "lff",
+      "body": ["log.Fatalf(\"${1:%+v}\\n\", ${0:err})"]
+  },
+  
+  "log.Errorf": {
+    "prefix": "lef",
+    "body": ["log.Errorf(\"${1:%+v}\\n\", ${0:err})"]
+  },
+
+  "fmt.Sprintf": {
     "prefix": "fms",
     "body": ["fmt.Sprintf(\"${1:%+v}\", $0)"]
+  },
+
+  "fmt.Errorf": {
+    "prefix": "fme",
+    "body": ["fmt.Errorf(\"${1:%+v}\", ${0:err})"]
   },
 
   "if error": {
@@ -156,5 +176,36 @@
   "Non-blocking Channel Send": {
     "prefix": "nb",
     "body": ["select {", "case $1 <- $0:", "default:", "}"]
-  }
+  },
+  
+  "Testify Assert Nil": {
+    "prefix": "anil",
+    "body": [
+      "assert.Nil(t, ${1:actual})", 
+      "$0"
+    ]
+  },
+  "Testify Assert Not Nil": {
+    "prefix": "annil",
+    "body": [
+      "assert.NotNil(t, ${1:actual})", 
+      "$0"
+    ]
+  },
+
+  "Testify Assert Equal": {
+    "prefix": "aeq",
+    "body": [
+      "assert.Equal(t, ${1:expected}, ${2:actual})",
+      "$0"
+    ]
+  },
+
+  "Testify Assert No Error": {
+    "prefix": "anerr",
+    "body": [
+      "assert.NoError(t, ${1:err})",
+      "$0"
+    ]
+  },
 }
