@@ -34,7 +34,8 @@ Below is a list of all available snippets and the triggers of each one.
 | `frr`   | for range channel `for v := range channel { myStatements }`|
 | `def`   | case default `default:` |
 | `cl`   | close `close(closable)` |
-| `fms`   | fmt Sprinf `fmt.Sprintf("%+v", args)` |
+| `fms`   | fmt Sprintf `fmt.Sprintf("%+v", args)` |
+| `fme`   | fmt Errorf `fmt.Errorf("%+v", args)` |
 
 
 ### Types
@@ -70,6 +71,9 @@ Below is a list of all available snippets and the triggers of each one.
 | :------- | ------- |
 | `lo`   | log variable `log.Printf("%+v\n", varName)` |
 | `le`   | log error `log.Printf("%+v\n", err)` |
+| `lef`   | log error (when using logrus) `log.Errorf("%+v\n", err)` |
+| `lf`   | log fatal `log.Fatal(err)` |
+| `lff`   | log fatal `log.Fatalf("%+v\n", err)` |
 
 
 ### Error Handling
@@ -90,6 +94,13 @@ Below is a list of all available snippets and the triggers of each one.
 | `lock`   | sync.Mutex Lock and defer Unlock <pre>mu.Lock()<br/>defer mu.Unlock()</pre>|
 | `nb` | non-blocking channel send <pre>select {<br/>case msg &lt;- msgChan:<br/>default:<br/>}</pre>|
 
+### Testify Assert
+| Prefix  | Content |
+| :------- | ------- |
+| `anil`   | assert nil `assert.Nil(t, actual)` |
+| `annil`   | assert not nil `assert.NotNil(t, actual)` |
+| `aeq`   | assert nil `assert.Equal(t, expected, actual)` |
+| `anerr`   | assert nil `assert.NoError(t, err)` |
 
 [code]: https://code.visualstudio.com/
 [coffee]: https://buy.stripe.com/9AQ9DA6qq3Afbrq7ss
