@@ -99,8 +99,13 @@ Below is a list of all available snippets and the triggers of each one.
 | :------- | ------- |
 | `anil`   | assert nil `assert.Nil(t, actual)` |
 | `annil`   | assert not nil `assert.NotNil(t, actual)` |
-| `aeq`   | assert nil `assert.Equal(t, expected, actual)` |
-| `anerr`   | assert nil `assert.NoError(t, err)` |
+| `aeq`   | assert equal `assert.Equal(t, expected, actual)` |
+| `anerr`   | assert no error `assert.NoError(t, err)` |
+
+### Import
+| Prefix  | Content |
+| :------- | ------- |
+| `logrus`   | import logrus `log "github.com/sirupsen/logrus"` |
 
 [code]: https://code.visualstudio.com/
 [coffee]: https://buy.stripe.com/9AQ9DA6qq3Afbrq7ss
