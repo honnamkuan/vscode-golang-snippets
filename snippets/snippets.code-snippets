@@ -81,6 +81,13 @@
     "body": ["fmt.Errorf(\"${1:%+v}\", ${0:err})"]
   },
 
+  "ctx context.Context": {
+    "prefix": "ctx",
+    "body": [
+      "ctx context.Context",
+    ],
+  },
+
   "if error": {
     "prefix": "ier",
     "body": ["if err != nil {", "  $0", "}"]

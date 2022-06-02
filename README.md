@@ -36,6 +36,7 @@ Below is a list of all available snippets and the triggers of each one.
 | `cl`   | close `close(closable)` |
 | `fms`   | fmt Sprintf `fmt.Sprintf("%+v", args)` |
 | `fme`   | fmt Errorf `fmt.Errorf("%+v", args)` |
+| `ctx`   | ctx context.Context |
 
 
 ### Types
